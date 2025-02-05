@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVIGATION BAR */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.imgLogo {
+    width: 50px;
+    height: 50px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links li a {
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: 0.3s ease;
+}
+
+.links li a:hover {
+    color: red;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.fa-magnifying-glass {
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* SCIENCE SECTION */
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.science-left {
+    flex: 1;
+    padding: 20px;
+}
+
+.science-right {
+    flex: 1;
+}
+
+.science-right-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* CONTENT GRID */
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.container-2 div {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container-2 p {
+    font-size: 14px;
+    color: red;
+    margin: 5px 0;
+}
+
+.container-2 h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.container-2 span {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Discover */
+.discover{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    background: black;
+    margin: 20px;
+    padding: 30px;
+}
+.discover h1{
+color: white;
+}
+.discover button{
+    padding: 8px 15px;
+    border: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.container-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.container-3 div {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-3 div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.container-3 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.container-3 p {
+    font-size: 14px;
+    color: gray;
+}
+
+.container-3 h3 {
+    font-size: 18px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.container-3 span {
+    font-size: 12px;
+    color: darkgray;
+}
+.container-4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.science-left-4 {
+    flex: 0.5;
+    padding: 40px;
+    margin: 10px;
+
+}
+.science-left-4 button {
+    margin-top: 10px;
+    background-color: black;
+
+}
+
+.science-right-4 {
+    flex: 1;
+}
+
+.science-right-img-4 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.container-5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.AI-left-4 h1{
+    font-size: 5rem;
+}
+.AI-right-4 p{
+    font-size: 1.2rem;
+}
+.container-5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.AI-left-4 h1 {
+    font-size: 4rem; 
+    font-weight: bold;
+    color: #333; 
+}
+
+.AI-right-4 {
+    max-width: 600px; 
+}
+
+.AI-right-4 p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: black; 
+}
+.container-6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.container-6-right {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+.container-6-left {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex: 2;
+}
+
+/* .container-6-left > div {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+/* Hover Effect */
+/* .container-6-left > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+} */
+
+/* Image Styling */
+.container-6 img {
+    width: 100%;
+    /* border-radius: 10px; */
+    /* margin-bottom: 10px; */
+}
+
+.container-6 p {
+    font-size: 1rem;
+    color: red;
+    margin-bottom: 5px;
+}
+
+.container-6 .black {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 5px;
+}
+.container-6 h1 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.container-6 span {
+    font-size: 12px;
+    color: darkgray;
+}
+.subfooter {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    gap: 40px;
+    padding: 30px;
+    background-color: black;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Individual Footer Boxes */
+.subfooter-1 {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 15%;
+    min-width: 20px;
+}
+.subfooter-1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+.subfooter-1 img {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.subfooter-1 button {
+    background-color: #ff2b06;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.subfooter-1 button:hover {
+    background-color: #d92000;
+}
+
+.subfooter div:last-child {
+    max-width: 300px;
+    text-align: left;
+}
+
+.subfooter p{
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.subfooter h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subfooter input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.subfooter button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.subfooter button:hover {
+    background-color: #005bb5;
+}
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.newsletter input {
+    padding: 12px;
+    width: 250px;
+    border: none;
+    margin: 10px;
+}
+.newsletter button {
+    margin: 10px;
+    padding: 12px;
+    background: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 22px;
+}
+.app-links img {
+    width: 120px;
+    margin-top: 10px;
+}
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+.footer-bottom-links {
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-bottom-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 12px;
+}
